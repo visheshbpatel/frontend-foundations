@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+
+#nav-part1{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-part2{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#content{
+    padding: 50px 65px;
+    margin-bottom: -80px;
+}
+
+#content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content h1{
+    margin-top: 20px;
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: -3px;
+    word-spacing: -2px;
+}
+
+
+#case{
+    padding: 50px 70px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#case h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#case h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#line{
+    height: 2px;
+    width: 120px;
+    background-color: black;
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+    gap: 100px;
+}
+
+.elem{
+    width: 100%;
+    max-width: 400px;
+}
+
+.elem-img{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(135, 206, 210);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url(https://i.pinimg.com/736x/14/e1/b0/14e1b04d2f6a3bd6d409f85a1ad08164.jpg);
+}
+
+#img2{
+    background-image: url(https://i.pinimg.com/1200x/f0/36/16/f03616048d1043f2cb8f4bae8cc6cf3f.jpg);
+}
+
+#img3{
+    background-image: url(https://i.pinimg.com/736x/70/d5/aa/70d5aad6b1cbf514b4e5d0ee358c46a0.jpg);
+}
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+
+#bottom h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#bottom h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+}
+
+#bottom i{
+    padding: 9px 18px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+#bottom i:hover{
+    background-color: black;    
+    color: white;
+}
