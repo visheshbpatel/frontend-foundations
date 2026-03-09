@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 50px;
+    height: 100px;
+    width: auto;
+}
+
+
+
+/* 1. Absoulue Units */
+/* .px(pixles) */
+#box1{
+    font-size: 30px;
+    height: 500px;
+    width: 500px;
+    background-color: crimson; 
+    margin-bottom: 20px;
+}
+
+/* 
+Width will always be 200 pixels
+It does NOT change based on screen size
+Not ideal for fully responsive scaling 
+*/
+
+/* *************************************************** */
+
+
+/* 2. Relative Units */
+
+/* .em */
+#parent1{
+    height: 500px;
+    width: 500px;
+    font-size: 20px;
+    background-color: lightblue;
+    margin-bottom: 120px;
+}
+
+#child1{
+    font-size: 1em;      
+    height: 10em;         /* 10 × 20px = 200px */
+    width: 10em;
+    background-color: lightcoral;
+}
+
+
+/* 
+Relative to the font-size of the parent.
+If parent changes, child changes
+Can compound (can grow unexpectedly if nested)
+em is dependent on the font-size, not on width or height of the parent
+*/
+
+
+
+
+/* • rem */
+#box2{
+    font-size: 1rem;       /* 1 × 50px(html) = =50px */
+    height: 10rem;
+    width: 10rem;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+}
+
+/* 
+Relative to the root element's font-size. Best for consistent scaling.
+Always based on <html>
+No nesting problem
+Best practice for modern responsive design 
+*/
+
+
+
+
+/* .% */
+
+#parent2{
+    font-size: 30px;
+    height: 500px;
+    width: 500px;
+    background-color: lightsteelblue;
+    margin-bottom: 20px;
+}
+
+#child2{
+    font-size: 50%;
+    height: 50%;
+    width: 50%;
+    background-color: lightsalmon;
+}
+
+/*
+ Relative to the parent element’s size, used for width, padding, margin, etc.
+If container = 800px
+Box = 400px
+Very useful for flexible layouts
+
+
+
+width: 50% --> relative to parent width
+
+height: 50% --> relative to parent height
+
+font-size: 50% --> relative to parent font-size
+
+Different properties use different reference bases.
+*/
+
+
+
+/* *************************************************** */
+
+
+
+
+/* 3. Viewportt Units */
+/* Viewport = Visible screen area */
+
+
+/* • vw and vh */
+
+/* 1% of the viewport's width and height respectively. */
+
+#box3{
+    width: 50vw;
+    height: 50vh;
+    background-color: coral;
+    margin-bottom: 20px;
+}
+
+/* 
+If screen width = 1200px
+1vw = 12px
+
+If screen height = 800px
+1vh = 8px 
+
+ width: 100vw;   -->  /* Full screen width 
+height: 100vh;   -->  /* Full screen height 
+
+*/
+
+
+
+
+
+
+/* • vmin and vmax */
+
+/* Based on the smaller or larger value of the viewport's width or height */
+
+#box4{
+    height: 50vmin;
+    width: 50vmin;
+    background-color: gold;
+    margin-bottom: 20px;
+}
+
+
+#box5{
+    height: 50vmax;
+    width: 50vmax;
+    background-color: lightpink;
+    margin-bottom: 20px;
+}
+
+
+/* 
+Screen size = 1200px width × 800px height
+
+vmin --> smaller value --> 800px
+
+1vmin = 8px
+
+50vmin = 400px
+
+vmax --> larger value --> 1200px
+
+1vmax = 12px
+
+50vmax = 600px
+*/
+
+
+
+/* *************************************************** */
+
+
+
+/* 4. Useful Modern Units */
+
+/* .ch */
+
+#input  input{
+    width: 40ch;      /* fits approx 40 characters */
+}
+
+/* 
+Width of the "0" character in the current font. Useful for input fields.
+
+Very useful for:
+Form fields
+Character-limited inputs
+*/
+
+
+
+/* .lh */
+
+p{
+    line-height: 1.5;
+    margin-bottom: 2lh;
+}
+
+/* 
+Relative to the line height of the element.
+
+Meaning:
+Margin will be 2 × line-height
+Keeps vertical rhythm clean
+*/
+
+
+/* *************************************************** */
