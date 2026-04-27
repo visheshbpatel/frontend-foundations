@@ -1,39 +1,49 @@
 const users = [
   {
-    name: "amisha rathore",
-    pic: "https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg",
-    bio: "silent chaos in a loud world 🌑🖤 | not for everyone",
+    name: "vishesh",
+    pic: "https://images.unsplash.com/photo-1652794121351-a69e34871d86?w=400&h=600&fit=crop",
+    bio: "chai over everything ☕ | building something big",
   },
   {
-    name: "amita mehta",
-    pic: "https://i.pinimg.com/736x/1f/2f/85/1f2f856bf3a020ed8ee9ecb3306ae074.jpg",
-    bio: "main character energy 🎬 | coffee > everything ☕✨",
+    name: "madhav",
+    pic: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=600&fit=crop",
+    bio: "calm mind, loud goals 🎯 | gym + discipline",
   },
   {
-    name: "isha oberoi",
-    pic: "https://i.pinimg.com/736x/23/48/7e/23487ef1268cfe017047a0640318c0d0.jpg",
-    bio: "walking through dreams in doc martens 💭🖤 | late night thinker",
+    name: "buddy",
+    pic: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=600&fit=crop",
+    bio: "just here for vibes 😎 | memes + music all day",
   },
   {
-    name: "Ojin Oklawa",
-    pic: "https://i.pinimg.com/736x/01/be/94/01be94b0b5bf03a50b5d6c4bfec78063.jpg",
-    bio: "too glam to give a damn 💅 | filter free soul",
+    name: "kunal",
+    pic: "https://images.unsplash.com/photo-1573197441318-dd67c7e2eea3?w=400&h=600&fit=crop",
+    bio: "design. create. repeat 🎨 | minimal soul",
   },
   {
-    name: "diya bansal",
-    pic: "https://i.pinimg.com/736x/74/b0/67/74b067e6c5ece09d99f68c42c5f6754e.jpg",
-    bio: "a little chaos, a lot of art 🎨✨ | just vibes",
+    name: "navneet",
+    pic: "https://images.unsplash.com/photo-1615109398623-88346a601842?w=400&h=600&fit=crop&crop=faces",
+    bio: "small town, big dreams 🌆 | hustle never stops",
   },
   {
-    name: "tanay rawat",
-    pic: "https://i.pinimg.com/736x/9b/78/b9/9b78b95425278ee37e88869b8c5fb2c6.jpg",
-    bio: "don’t text, just vibe 🪩 | soft heart, sharp mind",
+    name: "sauham",
+    pic: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=400&h=600&fit=crop&crop=faces",
+    bio: "overthinking everything 🤯 | but still moving forward",
   },
   {
-    name: "mohit chhabra",
-    pic: "https://i.pinimg.com/736x/22/8b/cf/228bcf5a0800f813cd1744d4ccbf01ea.jpg",
-    bio: "aesthetic overload 📸🕊️ | living in lowercase",
+    name: "anshul",
+    pic: "https://images.unsplash.com/photo-1665832102899-2b3f12cf991e?w=400&h=600&fit=crop",
+    bio: "quiet but dangerous 🧠 | strategy > noise",
   },
+  {
+    name: "chaitanya",
+    pic: "https://images.unsplash.com/photo-1670558736998-121e21e6ab5c?w=400&h=600&fit=crop",
+    bio: "old soul 🎧 | lost in music & thoughts",
+  },
+  {
+    name: "tushar",
+    pic: "https://images.unsplash.com/photo-1638733809153-1be41f8cc819?w=400&auto=format&fit=crop&q=60",
+    bio: "focused mind ⚡ | chasing goals daily",
+  }
 ];
 
 
@@ -53,7 +63,6 @@ function showUsers(arr){
 
   // blur img
   const blurredLayer = document.createElement("div");
-  blurredLayer.style.backgroundImage = `url(${user.pic})`;
   blurredLayer.classList.add('blurred-layer')
 
 

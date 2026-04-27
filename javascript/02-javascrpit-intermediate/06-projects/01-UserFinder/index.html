@@ -2,33 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Users</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Users</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-    <div class="flex flex-col gap-10 items-center">
-        
-        <input 
-            class="inp px-5 py-5 rounded outline-none bg-[#111] text-[#888]" 
-            type="text" 
-            placeholder="Search..."
-        >
+  <div class="wrapper">
 
-        <div class="warning">
-            <h2>No user found</h2>
-        </div>
+    <input 
+      class="inp" 
+      type="text" 
+      placeholder="Search..."
+    >
 
-
-        <div class="cards flex gap-10">           
-
-        </div>
+    <div class="warning">
+      <h2>No user found</h2>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <div class="cards"></div>
 
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
