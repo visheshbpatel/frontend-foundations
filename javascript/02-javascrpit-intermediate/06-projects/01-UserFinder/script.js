@@ -86,3 +86,23 @@ function showUsers(arr){
   })
 
 }
+
+
+showUsers(users);
+
+let inp = document.querySelector('.inp');
+let warning = document.querySelector('.warning');
+
+inp.addEventListener('input', function () {
+
+  let newUsers = users.filter((user) => {
+    return user.name.toLowerCase().includes(inp.value.toLowerCase());
+  });
+
+  warning.classList.toggle('show', newUsers.length === 0);
+
+  document.querySelector('.cards').innerHTML = "";
+
+  showUsers(newUsers);
+
+});

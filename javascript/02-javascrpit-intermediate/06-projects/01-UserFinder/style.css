@@ -65,5 +65,14 @@ body {
   line-height: 1.4;
 }
 
+.warning {
+  display: none;
+  font-size: 25px;
+  color: red;
+}
 
+
+.warning.show{
+  display: block;
+}
 
