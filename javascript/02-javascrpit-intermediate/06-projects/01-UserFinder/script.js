@@ -37,3 +37,52 @@ const users = [
 ];
 
 
+function showUsers(arr){
+
+  arr.forEach(function (user){
+    //outer div
+  const card = document.createElement("div");
+  card.classList.add('card');                    //<div class="card"></div>
+
+
+  // create img
+  const img = document.createElement("img");
+  img.src = user.pic;
+  img.classList.add('bg-img');
+
+
+  // blur img
+  const blurredLayer = document.createElement("div");
+  blurredLayer.style.backgroundImage = `url(${user.pic})`;
+  blurredLayer.classList.add('blurred-layer')
+
+
+  // content div
+  const content = document.createElement("div");
+  content.classList.add("content");
+
+
+  // h3 and paras
+  const heading = document.createElement("h3");
+  heading.textContent = user.name;
+
+  const para = document.createElement("p");
+  para.textContent = user.bio;
+
+
+  // append h3 and para to content
+  content.appendChild(heading);
+  content.appendChild(para);
+
+
+  // append all to card
+  card.appendChild(img);
+  card.appendChild(blurredLayer);
+  card.appendChild(content);
+
+
+  // final append to container
+  document.querySelector('.cards').appendChild(card);
+  })
+
+}
